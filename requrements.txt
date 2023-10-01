@@ -1,2 +1,0 @@
-##Work in progress. 
-##run pip install -r requirements.txt before running any programs.
