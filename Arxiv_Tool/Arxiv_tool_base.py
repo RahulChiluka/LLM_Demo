@@ -13,12 +13,12 @@ tools = load_tools(
 agent_chain = initialize_agent(
     tools,
     llm,
-    max_iterations=5,
-    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-    verbose=True,
-    handle_parsing_errors=True,
+    max_iterations=5, ##Number of papers to search
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,  
+    verbose=True, ##Show the process along with the final result in the terminal
+    handle_parsing_errors=True, ##Handles errors using builtin langchain tools
 )
 
 agent_chain.run(
-    "what is MOTR?",
+    "what is MOTR?", ##Modify question here and run this python file.
 )
